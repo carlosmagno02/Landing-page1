@@ -14,14 +14,14 @@ html,body{
 }
 
 .center{
-    width: 1200px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 2%;
 }
 
 header{
-    min-width: 1200px;
     width: 100%;
+    padding: 0 2%;
     height: 60px;
     background-color: #212343;
 }
@@ -32,7 +32,7 @@ header img{
 
 .container-banner{
     width: 100%;
-    min-width: 1200px;
+    padding: 0 2%;
     height: 557px;
     background-image: url(../img/header_bg.png);
     background-size: cover;
@@ -50,6 +50,7 @@ header img{
     float: right;
     position: relative;
     top: -15px;
+    border-width: 12px;
     background-color: white;
     border: 8px solid rgba(120,120,120,0.5);
     background-clip:padding-box ;
@@ -109,9 +110,9 @@ background-color: #4a5097 ;
 
 .container-list{
 padding: 30px;
-margin-top: 40px;
+margin-top: 100px;
 float: left;
-width: 619px;
+width: 519px;
 height: 270px;
 background-color: rgba(33, 35, 67, 0.7);
 }
@@ -125,8 +126,7 @@ background-color: rgba(33, 35, 67, 0.7);
 }
 
 .container2{
-    min-width: 1200px;
-    padding: 40px 0;
+    padding: 40px 2%;
     background-color: #ddd;
     text-align: center;
 }
@@ -136,7 +136,8 @@ background-color: rgba(33, 35, 67, 0.7);
 }
 
 .container2 p{
-    width: 698px;
+    width: 100%;
+    max-width: 768px;
     margin: 15px 0;
     display: inline-block;
     text-align: justify;
@@ -154,7 +155,7 @@ background-color: rgba(33, 35, 67, 0.7);
 }
 
 .section1{
-    padding: 90px 0;
+    padding: 90px 2%;
 }
 
 .section1 h2{
@@ -193,4 +194,88 @@ footer{
 
 footer p{
     padding: 10px;
+}
+
+@media screen and (max-width: 1024px){
+    header{
+        height: auto;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    header img{
+        margin: 0;
+    }
+    .container-list{
+        padding: 30px 0;
+        float: left;
+        width: 40%;
+        margin-top: 0;
+        max-width: 500px;
+        height: auto;
+    }
+    
+    .container-banner{
+        width: 100%;
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+    .container-banner{
+        width: 100%;
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .form{
+        margin-top: 30px;
+        max-width: 400px;
+        padding: 10px;
+        width: 60%;
+        height: 100%;
+        float: right;
+        top: 0;
+    }
+
+    .input-container input{
+        width: 100%;
+        height: 55px;
+    }
+
+    .form input[type=submit]{
+        max-width: 280px;
+        width: 100%;
+        height: 56px;
+
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container-list2{
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+    .container-list{
+        margin-top: 0;
+        float: none;
+        display:inline-block ;
+        width: 100%;
+    }
+
+    .form{
+        float: none;
+        display: inline-block;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .container-single{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        max-width: 600px;
+        padding:30px
+    }
 }
